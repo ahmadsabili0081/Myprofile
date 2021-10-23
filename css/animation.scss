@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+@keyframes lebar{
+    0%{
+        width: 0%;
+        transition: 1.5;
+    }
+    100%{
+        width: 80%;
+        transition: 1.5s;
+    }
+}
+@keyframes lebar2{
+    0%{
+        width: 0%;
+        transition: 1.5;
+    }
+    100%{
+        width: 50%;
+        transition: 1.5s;
+    }
+}
+@keyframes lebar3{
+    0%{
+        width: 0%;
+        transition: 1.5;
+    }
+    100%{
+        width: 60%;
+        transition: 1.5s;
+    }
+}
+@keyframes animatiMS{
+    0%{
+        width: 0%;
+        transition: 1.5;
+    }
+    100%{
+        width: 70%;
+        transition: 1.5s;
+    }
+}
+@keyframes animatiMS2{
+    0%{
+        width: 0%;
+        transition: 1.5;
+    }
+    100%{
+        width: 67%;
+        transition: 1.5s;
+    }
+}
+@keyframes animatiMS3{
+    0%{
+        width: 0%;
+        transition: 1.5;
+    }
+    100%{
+        width: 63%;
+        transition: 1.5s;
+    }
+}
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+        transition: 2.5s;
+    }
+    50%{
+        transition: 2.5s;
+        transform: translateY( 10px);
+    }
+    100%{
+        transition: 2.5s;
+        transform: translateY(0px);
+    }
+}
+@keyframes modalGallery{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+@keyframes top {
+    from{
+        transform: translateY(-300px);
+    }
+}
+@keyframes btn {
+    from{
+        transform: translateX(70px);
+    }
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes  animaticontainer {
+    from{ 
+         opacity:0 
+    } 
+    to{ 
+         opacity:1
+     }
+}

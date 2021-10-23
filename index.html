@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Profile || Ahmad Sabili Alghifari</title>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="keywords" content="HTML, CSS, JAVASCRIPT">
+        <meta http-equiv="refresh" content="600">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/animation.css">
+        <link rel="shortcut icon" type="images/png/jpg" href="images/foto.jpg">
+    </head>
+    <body onload="myfunction()">
+        <div class="loader" id="loader" >
+            <h1 class="type3"></h1>
+            <div class="loader-inside">
+
+            </div>
+        </div>
+        <div class="container" id="myDiv">
+            <div class="btnScroll"  onclick="btnScroll()">
+                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            </div>
+            <header>
+                <div class="logo"data-aos="fade-down" data-aos-easing="linear"  data-aos-duration="1000">
+                    <a href="#" class="type" ></a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home"> <i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                        <li><a href="#about"> <i class="fa fa-user" aria-hidden="true"></i>
+                            Abouts</a></li>
+                        <li><a href="#skill"> <i class="fa fa-laptop" aria-hidden="true"></i>
+                            Skills</a></li>
+                        <li><a href="#experience"><i class="fa fa-briefcase" aria-hidden="true"></i>
+                            Experiences</a></li>
+                        <li><a href="#gallery"><i class="fa fa-picture-o" aria-hidden="true"></i>
+                            Gallery</a></li>
+                        <li><a href="#contact"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            Contacts</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- banner -->
+            <section class="banner-profile" id="home">
+                <div class="container-banner-profile">
+                    <div class="box-banner-profile">
+                        <div class="text-banner" data-aos="fade-right">
+                            <h1>Hi, I'am Ahmad sabili alghifari</h1>
+                            <span class="type2" ></span>
+                            <p>high experience in web design and still have to learn more about this.</p>
+                        </div>
+                        <button data-aos="fade-right" type="button" onclick="Btncv()">Download CV <i class="fa fa-download" aria-hidden="true"></i></button>
+                        <a href="https://github.com/ahmadsabili0081/" target="blank_"><i data-aos="fade-down" data-aos-easing="linear"  data-aos-duration="1100"" class="fa fa-github" aria-hidden="true"></i></a>
+                        <a href="instagram.com/console.log44" target="blacnk_"><i data-aos="fade-down" data-aos-easing="linear"  data-aos-duration="1300" class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href=""><i data-aos="fade-down" data-aos-easing="linear"  data-aos-duration="1500" class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </div>
+                    <div data-aos="fade-left" class="box-banner-profile-img">
+                    </div>
+                    <div class="modal-cv" id="modalCV">
+                        <div class="modal-content">
+                            <header class="modal"><i onclick="Btncv()" class="fa fa-close" aria-hidden="true"></i></header>
+                            <h3 style="text-align: center;">Sorry, this file is not yet available.</h3>
+                            <p>Please check again later, because this website will always be updated.</p>
+                            <footer>created By Ahmad Sabili | C 2021 All right reserved</footer>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section-about-profile -->
+            <section class="about-profile" id="about">
+                <div class="container-about-profile">
+                    <h1 data-aos="fade-down">ABOUT ME</h1>
+                    <div class="row-about-profile">
+                        <div class="box-about-profile-img" data-aos="fade-right">
+                            <img src="images/foto.jpg" alt="Ini adalah sebuah gambar">
+                        </div>
+                        <div class="box-about-profile">
+                            <p data-aos="fade-left">Hii, Let me introduce myself my name is ahmad sabili alghifari, you can call me bili. I live in indonesia. So right now I'am studyng at Univeristy of Nusa Mandiri,
+                                I'm interested in majoring information system that make me wanna know so far about this.  
+                            </p>
+                            <br>
+                            <p data-aos="fade-left">I make this website to improve my skill in Front-End yaa I know. This website still far from the perfect words. I hope u guys who seeing my website interested to hire me or to be your partner work.</p>
+                                 <button data-aos="fade-left" onclick="Btncv()" type="button">Download CV <i class="fa fa-download" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- skills-profile -->
+            <section class="skills-profile" id="skill">
+                <div class="container-skills-profile">
+                   <h1 data-aos="fade-down">SKILLS</h1> 
+                   <div class="row-skills-profile">
+                       <div class="box-skills-front" data-aos="fade-right">
+                         <div class="text-front">
+                             <h3>Front-End Developers</h3>
+                              <span><i title="click this button" id="skills" class="fa fa-angle-up" aria-hidden="true"></i></span>
+                         </div>
+                        <div class="box-skills-inside inside">
+                            <p >HTML</p>
+                            <div class="container-bar" data-aos="fade-right">
+                                <div class="bar html ">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                            <P>CSS</P>
+                            <div class="container-bar" data-aos="fade-right">
+                                <div class="bar css">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                            <P>JAVASCRIPT</P>
+                            <div class="container-bar" data-aos="fade-right">
+                                <div class="bar js">
+                                    <span>50%</span>
+                                </div>
+                            </div>
+                            <P>PHP</P>
+                            <div class="container-bar" data-aos="fade-right">
+                                <div class="bar php">
+                                    <span>50%</span>
+                                </div>
+                            </div>
+                            <P>MYSQL</P>
+                            <div class="container-bar" data-aos="fade-right">
+                                <div class="bar mysql">
+                                    <span>60%</span>
+                                </div>
+                            </div>
+                            <p>BOOTSTRAP</p>
+                            <div class="container-bar" data-aos="fade-right">
+                                <div class="bar bs">
+                                    <span>60%</span>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="box-skill-ms" data-aos="fade-left">
+                            <div class="text-box-skill-ms">
+                                <h3>MS.WORD</h3>
+                                <span><i title="click this button" id="msClick" class="fa fa-angle-up" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="box-skills-inside-ms insideMs">
+                                <p>MICROSOFT WORD</p>
+                                <div class="container-bar-ms">
+                                    <div class="bar word">
+                                        <span>70%</span>
+                                    </div>
+                                </div>
+                                <p>MICROSOFT EXCLE</p>
+                                <div class="container-bar-ms">
+                                    <div class="bar excle">
+                                        <span>67%</span>
+                                    </div>
+                                </div>
+                                <P>MICROSOFT POWER POINT</P>
+                                <div class="container-bar-ms">
+                                    <div class="bar pp">
+                                        <span>63%</span>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+                </div>
+            </section>
+            <!--experience-profile  -->
+            <section class="experience-profile" id="experience">
+                <div class="container-experience-profile">
+                    <h1 data-aos="fade-down">EXPERIENCE</h1>
+                    <div class="row-container-experience-profile">
+                        <div class="line" data-aos="fade-down"></div>
+                        <div class="box-experience-1" data-aos="fade-right">
+                            <div class="box-experience">
+                                <div class="text-experience">
+                                    <h3>Educator Operators</h3>
+                                    <span>17 Jul 2018 -  sekarang 2021</span>
+                                </div>
+                                <p>Here I am as an education operator, whose job is to input data for incoming and outgoing students at PAUD NURUL IMAN. </p>
+                            </div>
+                        </div>
+                        <div class="box-experience-2" data-aos="fade-right">
+                            <div class="box-experience">
+                                <div class="text-experience">
+                                    <h3>Merdeka Vaccine Volunteers</h3>
+                                    <span>21 Sep 2021 - 1 Oct 2021</span>
+                                </div>
+                                <p>Here I am the inputor, who interacts is inputting the data of people who have been vaccinated. This activity was initiated by Polda Metro Jaya, in order to support vaccines in cities that support the capital city. </p>
+                            </div>
+                        </div>
+                        <div class="box-experience-1" data-aos="fade-right">
+                            <div class="box-experience">
+                                <div class="text-experience">
+                                    <h3>Front-End Dev intern</h3>
+                                    <span>1 Oct 2021 -  31 Dec 2021</span>
+                                </div>
+                                <p>Here I did an internship at a company called KINAJA.ID. This company is engaged in landing, branding and other creative needs such as making a website display. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- gallery-profile -->
+            <section class="gallery-profile" id="gallery">
+                <div class="container-gallery-profile">
+                    <h1 data-aos="fade-down">GALLERY PORTOFOLIO</h1>
+                        <div class="row-gallery-profile">
+                            <div class="box-gallery" data-aos="zoom-in">
+                                <img onclick="modalimg()"  src="images/picture1.png" alt="Ini adalah sebuah gambar">
+                            </div>
+                            <div class="box-gallery" data-aos="zoom-in">
+                                <img onclick="modalimg2()" src="images/picture2.png" alt="Ini adalah sebuah gambar">
+                            </div>
+                            <div class="box-gallery" data-aos="zoom-in">
+                                <img onclick="modalimg3()" src="images/picture3.png" alt="Ini adalah sebuah gambar">
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-gallery" id="modalGalery">
+                    <i onclick="modalimg()" class="fa fa-close" aria-hidden="true"></i>
+                    <div class="modal-gallery-content">
+                        <img src="images/picture1.png" alt="Ini adalah sebuah gambar">
+                    </div>
+                </div>
+                <div class="modal-gallery gallery-2" id="modalGalery-2">
+                    <i onclick="modalimg2()" class="fa fa-close" aria-hidden="true"></i>
+                    <div class="modal-gallery-content">
+                        <img src="images/picture2.png" alt="Ini adalah sebuah gambar">
+                    </div>
+                </div>
+                <div class="modal-gallery gallery-2" id="modalGalery-3">
+                    <i onclick="modalimg3()" class="fa fa-close" aria-hidden="true"></i>
+                    <div class="modal-gallery-content">
+                        <img src="images/picture3.png" alt="Ini adalah sebuah gambar">
+                    </div>
+                </div>
+            </section>
+            <!-- contact-profile -->
+            <section class="contact-profile" id="contact">
+                <div class="container-contact-profile">
+                    <h1 data-aos="fade-down">CONTACT ME</h1>
+                    <div class="row-contact-profile">
+                        <div class="box-contact" data-aos="fade-left">
+                            <p>This my personal contact website, maybe later i'll give a new additional fiture for beautifull view.
+                            </p>
+                            <div class="text-call">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <span>ahmadsabili0081@gmail.com</span>
+                            </div>
+                            <div class="text-call">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span>Tangerang, Indonesia</span>
+                            </div>
+                            <div class="text-call">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <span>console.log44</span>
+                            </div>
+                        </div>
+                        <div class="box-input-profile" data-aos="fade-left">
+                            <form action="#">
+                                <div class="input-group text">
+                                    <input type="text" placeholder="Name" required="required">
+                                    <input type="text" placeholder="Address" required="required">
+                                </div>
+                                <div class="input-group">
+                                    <input class="subject" type="text" placeholder="Subject" required="required">
+                                </div>
+                                <div class="input-group">
+                                    <textarea name="message" placeholder="Message" required="required"></textarea>
+                                </div>
+                                <button onclick="modalBtn()" type="button">Send <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal" id="footer-modal">
+                        <div class="modal-content-input">
+                            <header class="modal-input"><i onclick="modalBtn()" class="fa fa-close" aria-hidden="true"></i></header>
+                            <h4>Sorry, you can't send email messages at this time</h4>
+                            <p>Please check later, because this website will always be updated.</p>
+                            <footer>created By Ahmad Sabili | C 2021 All right reserved</footer>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- footer-profile -->
+            <div class="footer">
+                <div class="container-footer-profile">
+                    <footer>
+                        <span>created By Ahmad Sabili | C 2021 All right reserved</span>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 120, // offset (in px) from the original trigger point
+                duration: 300, // values from 0 to 3000, with step 50ms
+                easing: 'ease',
+            });
+          </script> 
+          <script src="typed.js-master/lib/typed.js"></script>
+          <script>
+              var typed = new Typed('.type', {
+                strings: ['Ahmad Sabili Alghifar...'],
+               typeSpeed:100,
+               backSpeed:80,
+               loop:true
+                });
+              var typed = new Typed('.type2', {
+                strings: ['Junior Front-End Developer.','I am still hafta learn more about this.','And still looking for the experience.'],
+               typeSpeed:120,
+               backSpeed:80,
+               loop:true
+                });
+              var typed = new Typed('.type3', {
+                strings: ['Hello There...','Welcome to my website.'],
+               typeSpeed:20,
+               backSpeed:25,
+               loop:true
+                });
+          </script>
+          <script src="js/skill.js"></script>
+          <script src="js/sticky.js"></script>
+          <script src="js/modalGallery.js"></script>
+          <script src="js/hamburger.js"></script>
+          <script src="js/loader.js"></script>
+         
+    </body>
+</html>
