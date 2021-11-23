@@ -1,24 +1,32 @@
+let picts = document.getElementsByClassName('item-image');
+let modal__gallery = document.getElementById('modalWindow');
+let modalOpen = false;
+let clickOutSide = false;
 
+let modalClose = document.getElementById('ModalClose');
+modalClose.addEventListener('click', ImageClose, false);
 
-function modalimg(){
-    var modal = document.getElementById('modalGalery');
-    modal.classList.toggle('active');
+for(let i = 0; i < picts.length; i++){
+    picts[i].addEventListener('click', imageOpen,false);
+}
+function imageOpen (item){
+    listenerLaunch();
+    modal__gallery.style.display ="flex";
+    document.getElementById('modalPict').innerHTML= '<img src="'  + this.src + '">';
+    clickOutSide = false;
+    modalOpen = true;
+}
+function ImageClose (){
+    modalOpen = false;
+    modal__gallery.style.display ="none";
 }
 
-function modalimg2(){
-    var modal = document.getElementById('modalGalery-2');
-    modal.classList.toggle('active2');
-}
-function modalimg3(){
-    var modal = document.getElementById('modalGalery-3');
-    modal.classList.toggle('active3');
-}
-
-function Btncv(){
-    var CV = document.getElementById('modalCV');
-    CV.classList.toggle('modalActive');
-}
-function modalBtn(){
-    var modalInput = document.getElementById('footer-modal');
-    modalInput.classList.toggle('modalActiveEmail');
+function listenerLaunch(){
+    modal__gallery.addEventListener('click', function (evt){
+        clickOutSide = !document.getElementById('modalPict').getElementsByTagName("img")[0].contains(evt.target);
+        if(clickOutSide && modalOpen){
+            modal__gallery.style.display = "none";
+            modalOpen = false;
+        }
+    });
 }

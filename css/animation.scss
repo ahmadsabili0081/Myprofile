@@ -111,3 +111,14 @@
          opacity:1
      }
 }
+.arrowLeft{
+    animation: arrow 1.5s ease-in infinite;
+}
+@keyframes arrow {
+    from{
+        transform: translateX(-10px);
+    }
+    to{
+        transform:translateX(0px);
+    }
+}

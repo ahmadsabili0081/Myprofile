@@ -146,7 +146,9 @@
   }
   .container .banner-profile .container-banner-profile .box-banner-profile {
     width: 90%;
-    margin-top: 15%;
+  }
+  .container .banner-profile .container-banner-profile .box-banner-profile .text-banner {
+    margin-top: 40px;
   }
   .container .banner-profile .container-banner-profile .box-banner-profile .text-banner h1 {
     font-size: 20px;
@@ -157,6 +159,7 @@
   .container .banner-profile .container-banner-profile .box-banner-profile-img {
     width: 80%;
     margin-right: 0%;
+    margin-top: 20%;
   }
   .container .banner-profile .container-banner-profile .modal-cv {
     width: 100%;
@@ -189,6 +192,7 @@
   .container .about-profile .container-about-profile .row-about-profile .box-about-profile-img {
     width: 95%;
     margin-left: 0%;
+    margin-top: 7%;
   }
   .container .about-profile .container-about-profile .row-about-profile .box-about-profile {
     width: 100%;
@@ -304,14 +308,13 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
+    margin-top: 10%;
   }
-  .container .gallery-profile .modal-gallery {
+  .container .gallery-profile .container-gallery-profile .modal__gallery {
     width: 100%;
   }
-  .container .gallery-profile .modal-gallery .modal-gallery-content {
-    width: 90%;
-    margin: 35% auto;
+  .container .gallery-profile .container-gallery-profile .modal__gallery .modal__pict {
+    width: 100%;
   }
   .container .contact-profile {
     padding: 50px 15px;

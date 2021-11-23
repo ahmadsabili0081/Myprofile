@@ -292,4 +292,31 @@
     opacity: 1;
   }
 }
+
+.arrowLeft {
+  -webkit-animation: arrow 1.5s ease-in infinite;
+          animation: arrow 1.5s ease-in infinite;
+}
+
+@-webkit-keyframes arrow {
+  from {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes arrow {
+  from {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
 /*# sourceMappingURL=animation.css.map */

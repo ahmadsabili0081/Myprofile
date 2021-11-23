@@ -6,13 +6,13 @@
         <title>Profile || Ahmad Sabili Alghifari</title>
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="keywords" content="HTML, CSS, JAVASCRIPT">
+        <link rel="shortcut icon" type="images/png/jpg" href="images/foto.jpg">
         <meta http-equiv="refresh" content="600">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
         <link rel="stylesheet" type="text/css" href="css/mobile.css">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/animation.css">
-        <link rel="shortcut icon" type="images/png/jpg" href="images/foto.jpg">
+        <link rel="stylesheet" type="text/css" href="css/aos.css">
     </head>
     <body onload="myfunction()">
         <div class="loader" id="loader" >
@@ -34,7 +34,7 @@
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-                <nav>
+                <nav class="navbar">
                     <ul>
                         <li><a href="#home"> <i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
                         <li><a href="#about"> <i class="fa fa-user" aria-hidden="true"></i>
@@ -61,8 +61,7 @@
                         </div>
                         <button data-aos="fade-right" type="button" onclick="Btncv()">Download CV <i class="fa fa-download" aria-hidden="true"></i></button>
                         <a href="https://github.com/ahmadsabili0081/" target="blank_"><i data-aos="fade-down" data-aos-easing="linear"  data-aos-duration="1100"" class="fa fa-github" aria-hidden="true"></i></a>
-                        <a href="instagram.com/console.log44" target="blacnk_"><i data-aos="fade-down" data-aos-easing="linear"  data-aos-duration="1300" class="fa fa-instagram" aria-hidden="true"></i></a>
-                        <a href=""><i data-aos="fade-down" data-aos-easing="linear"  data-aos-duration="1500" class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/ahmdsblii/" target="blacnk_"><i data-aos="fade-down" data-aos-easing="linear"  data-aos-duration="1300" class="fa fa-instagram" aria-hidden="true"></i></a>
                     </div>
                     <div data-aos="fade-left" class="box-banner-profile-img">
                     </div>
@@ -107,37 +106,37 @@
                          </div>
                         <div class="box-skills-inside inside">
                             <p >HTML</p>
-                            <div class="container-bar" data-aos="fade-right">
+                            <div class="container-bar">
                                 <div class="bar html ">
                                     <span>80%</span>
                                 </div>
                             </div>
                             <P>CSS</P>
-                            <div class="container-bar" data-aos="fade-right">
+                            <div class="container-bar">
                                 <div class="bar css">
                                     <span>80%</span>
                                 </div>
                             </div>
                             <P>JAVASCRIPT</P>
-                            <div class="container-bar" data-aos="fade-right">
+                            <div class="container-bar">
                                 <div class="bar js">
                                     <span>50%</span>
                                 </div>
                             </div>
                             <P>PHP</P>
-                            <div class="container-bar" data-aos="fade-right">
+                            <div class="container-bar">
                                 <div class="bar php">
                                     <span>50%</span>
                                 </div>
                             </div>
                             <P>MYSQL</P>
-                            <div class="container-bar" data-aos="fade-right">
+                            <div class="container-bar">
                                 <div class="bar mysql">
                                     <span>60%</span>
                                 </div>
                             </div>
                             <p>BOOTSTRAP</p>
-                            <div class="container-bar" data-aos="fade-right">
+                            <div class="container-bar">
                                 <div class="bar bs">
                                     <span>60%</span>
                                 </div>
@@ -146,7 +145,7 @@
                        </div>
                        <div class="box-skill-ms" data-aos="fade-left">
                             <div class="text-box-skill-ms">
-                                <h3>MS.WORD</h3>
+                                <h3>MS.Office</h3>
                                 <span><i title="click this button" id="msClick" class="fa fa-angle-up" aria-hidden="true"></i></span>
                             </div>
                             <div class="box-skills-inside-ms insideMs">
@@ -195,6 +194,7 @@
                                     <span>21 Sep 2021 - 1 Oct 2021</span>
                                 </div>
                                 <p>Here I am the inputor, who interacts is inputting the data of people who have been vaccinated. This activity was initiated by Polda Metro Jaya, in order to support vaccines in cities that support the capital city. </p>
+                                <a target="blank_" href="https://drive.google.com/file/d/1SACFor89hHv0ZoyLYtp8KJHt_z60vyWk/view?usp=sharing">Click Here <i class="fa fa-arrow-left arrowLeft" aria-hidden="true"></i> </a>
                             </div>
                         </div>
                         <div class="box-experience-1" data-aos="fade-right">
@@ -215,33 +215,46 @@
                     <h1 data-aos="fade-down">GALLERY PORTOFOLIO</h1>
                         <div class="row-gallery-profile">
                             <div class="box-gallery" data-aos="zoom-in">
-                                <img onclick="modalimg()"  src="images/picture1.png" alt="Ini adalah sebuah gambar">
+                                <img = class="item-image"  src="images/picture1.png" alt="Ini adalah sebuah gambar">
+                                <div class="text__gallery">
+                                    <span>this is my website exercise, which I made when I was practicing my learning results</span>
+                                </div>
                             </div>
                             <div class="box-gallery" data-aos="zoom-in">
-                                <img onclick="modalimg2()" src="images/picture2.png" alt="Ini adalah sebuah gambar">
+                                <img  class="item-image"  src="images/picture2.png" alt="Ini adalah sebuah gambar">
+                                <div class="text__gallery">
+                                    <span>this is my website exercise, which I made when I was practicing my learning results</span>
+                                </div>
                             </div>
                             <div class="box-gallery" data-aos="zoom-in">
-                                <img onclick="modalimg3()" src="images/picture3.png" alt="Ini adalah sebuah gambar">
+                                <img  class="item-image"  src="images/picture3.png" alt="Ini adalah sebuah gambar">
+                                <div class="text__gallery">
+                                    <span>this is my website exercise, which I made when I was practicing my learning results</span>
+                                </div>
+                            </div>
+                            <div class="box-gallery" data-aos="zoom-in">
+                                <img class="item-image" src="images/AdiraLanding.png" alt="AdiraLanding-png">
+                                <div class="text__gallery">
+                                    <span>this is the result of a website project that I made when I was an intern at KINAJA.ID <a  class="btn__gallery" target="blank_" href="https://ahmadsabili0081.github.io/AdiraLandingpage/">View Site</a> </span>
+                                </div>
+                            </div>
+                            <div class="box-gallery" data-aos="zoom-in">
+                                <img class="item-image" src="images/iloLanding.png" alt="iloLanding-png">
+                                <div class="text__gallery">
+                                    <span>this is the result of a website project that I made when I was an intern at KINAJA.ID <a class="btn__gallery" target="blank_" href="https://ahmadsabili0081.github.io/Landingpage/">View Site</a> </span>
+                                </div>
+                            </div>
+                            <div class="box-gallery" data-aos="zoom-in">
+                                <img class="item-image" src="images/MigasNews.png" alt="MigasNews-png">
+                                <div class="text__gallery">
+                                    <span>this is the result of a website project that I made when I was an intern at KINAJA.ID <a class="btn__gallery" target="blank_" href="https://ahmadsabili0081.github.io/MigasNews/">View Site</a> </span>
+                                </div>
                             </div>
                         </div>
-                </div>
-                <div class="modal-gallery" id="modalGalery">
-                    <i onclick="modalimg()" class="fa fa-close" aria-hidden="true"></i>
-                    <div class="modal-gallery-content">
-                        <img src="images/picture1.png" alt="Ini adalah sebuah gambar">
-                    </div>
-                </div>
-                <div class="modal-gallery gallery-2" id="modalGalery-2">
-                    <i onclick="modalimg2()" class="fa fa-close" aria-hidden="true"></i>
-                    <div class="modal-gallery-content">
-                        <img src="images/picture2.png" alt="Ini adalah sebuah gambar">
-                    </div>
-                </div>
-                <div class="modal-gallery gallery-2" id="modalGalery-3">
-                    <i onclick="modalimg3()" class="fa fa-close" aria-hidden="true"></i>
-                    <div class="modal-gallery-content">
-                        <img src="images/picture3.png" alt="Ini adalah sebuah gambar">
-                    </div>
+                        <div class="modal__gallery" id="modalWindow">
+                            <div class="modal__close" id="ModalClose">&times;</div>
+                            <div class="modal__pict" id="modalPict"></div>
+                        </div>
                 </div>
             </section>
             <!-- contact-profile -->
@@ -287,7 +300,7 @@
                             <header class="modal-input"><i onclick="modalBtn()" class="fa fa-close" aria-hidden="true"></i></header>
                             <h4>Sorry, you can't send email messages at this time</h4>
                             <p>Please check later, because this website will always be updated.</p>
-                            <footer>created By Ahmad Sabili | C 2021 All right reserved</footer>
+                            <footer>@created By Ahmad Sabili | C 2021 All right reserved</footer>
                         </div>
                     </div>
                 </div>
@@ -301,14 +314,7 @@
                 </div>
             </div>
         </div>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init({
-                offset: 120, // offset (in px) from the original trigger point
-                duration: 300, // values from 0 to 3000, with step 50ms
-                easing: 'ease',
-            });
-          </script> 
+          <script src="js/aos.js"></script>
           <script src="typed.js-master/lib/typed.js"></script>
           <script>
               var typed = new Typed('.type', {
@@ -327,14 +333,12 @@
                 strings: ['Hello There...','Welcome to my website.'],
                typeSpeed:20,
                backSpeed:25,
-               loop:true
                 });
           </script>
           <script src="js/skill.js"></script>
           <script src="js/sticky.js"></script>
           <script src="js/modalGallery.js"></script>
           <script src="js/hamburger.js"></script>
-          <script src="js/loader.js"></script>
-         
+          <script src="js/loader.js"></script>    
     </body>
 </html>

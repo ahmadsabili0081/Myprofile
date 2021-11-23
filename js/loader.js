@@ -1,7 +1,5 @@
-var myVar;
-
 function myfunction() {
-  myVar = setTimeout(showPage, 3500);
+  var myVar = setTimeout(showPage, 3500);
 }
 function showPage() {
     document.getElementById("loader").style.visibility = "hidden";
