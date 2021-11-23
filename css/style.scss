@@ -694,6 +694,7 @@ $fontPoppins: 'Poppins', sans-serif;
                     transition: 0.5s ease-in;
                     height: auto;
                     margin-top: 5%;
+                    padding: 10px;
                     border-radius: 10px;
                     img{
                         width: 100%;
@@ -703,14 +704,15 @@ $fontPoppins: 'Poppins', sans-serif;
                     }
                     .text__gallery{
                         width: 100%;
-                        padding: 10px 20px;
+                        height: auto;
+                        padding: 10px 0px;
                         font-family: $fontopensans;
                         span{
                             font-size: 12px;
                         }
                         a.btn__gallery{
                             width: 150px;
-                            margin: 10px 0px;
+                            margin: 20px 0px;
                             display: block;
                             text-align: center;
                             text-decoration: none;
