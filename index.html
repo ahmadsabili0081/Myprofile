@@ -59,7 +59,7 @@
                             <span class="type2" ></span>
                             <p>high experience in web design and still have to learn more about this.</p>
                         </div>
-                        <button data-aos="fade-right" type="button" onclick="Btncv()">Download CV <i class="fa fa-download" aria-hidden="true"></i></button>
+                        <button data-aos="fade-right" type="button" id="ModalContent">Download CV <i class="fa fa-download" aria-hidden="true"></i></button>
                         <a href="https://github.com/ahmadsabili0081/" target="blank_"><i data-aos="fade-down" data-aos-easing="linear"  data-aos-duration="1100"" class="fa fa-github" aria-hidden="true"></i></a>
                         <a href="https://www.instagram.com/ahmdsblii/" target="blacnk_"><i data-aos="fade-down" data-aos-easing="linear"  data-aos-duration="1300" class="fa fa-instagram" aria-hidden="true"></i></a>
                     </div>
@@ -67,7 +67,7 @@
                     </div>
                     <div class="modal-cv" id="modalCV">
                         <div class="modal-content">
-                            <header class="modal"><i onclick="Btncv()" class="fa fa-close" aria-hidden="true"></i></header>
+                            <header class="modal"><i id="CloseBtn" class="fa fa-close" aria-hidden="true"></i></header>
                             <h3 style="text-align: center;">Sorry, this file is not yet available.</h3>
                             <p>Please check again later, because this website will always be updated.</p>
                             <footer>created By Ahmad Sabili | C 2021 All right reserved</footer>
@@ -89,7 +89,15 @@
                             </p>
                             <br>
                             <p data-aos="fade-left">I make this website to improve my skill in Front-End yaa I know. This website still far from the perfect words. I hope u guys who seeing my website interested to hire me or to be your partner work.</p>
-                                 <button data-aos="fade-left" onclick="Btncv()" type="button">Download CV <i class="fa fa-download" aria-hidden="true"></i></button>
+                                 <button data-aos="fade-left" id="modalContent" type="button">Download CV <i class="fa fa-download" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="modal-cv" id="modalCV2">
+                        <div class="modal-content">
+                            <header class="modal"><i id="CloseBtn2" class="fa fa-close" aria-hidden="true"></i></header>
+                            <h3 style="text-align: center;">Sorry, this file is not yet available.</h3>
+                            <p>Please check again later, because this website will always be updated.</p>
+                            <footer>created By Ahmad Sabili | C 2021 All right reserved</footer>
                         </div>
                     </div>
                 </div>
@@ -182,7 +190,7 @@
                             <div class="box-experience">
                                 <div class="text-experience">
                                     <h3>Educator Operators</h3>
-                                    <span>17 Jul 2018 -  sekarang 2021</span>
+                                    <span>17 Jul 2018 - 31 Desember 2021</span>
                                 </div>
                                 <p>Here I am as an education operator, whose job is to input data for incoming and outgoing students at PAUD NURUL IMAN. </p>
                             </div>
@@ -275,7 +283,7 @@
                             </div>
                             <div class="text-call">
                                 <i class="fa fa-instagram" aria-hidden="true"></i>
-                                <span>console.log44</span>
+                                <span>ahmdsblii</span>
                             </div>
                         </div>
                         <div class="box-input-profile" data-aos="fade-left">
@@ -290,35 +298,35 @@
                                 <div class="input-group">
                                     <textarea name="message" placeholder="Message" required="required"></textarea>
                                 </div>
-                                <button onclick="modalBtn()" type="button">Send <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                <button id="modalContent3" type="button">Send <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
                                 </button>
                             </form>
                         </div>
                     </div>
-                    <div class="modal" id="footer-modal">
-                        <div class="modal-content-input">
-                            <header class="modal-input"><i onclick="modalBtn()" class="fa fa-close" aria-hidden="true"></i></header>
-                            <h4>Sorry, you can't send email messages at this time</h4>
-                            <p>Please check later, because this website will always be updated.</p>
-                            <footer>@created By Ahmad Sabili | C 2021 All right reserved</footer>
+                        <div class="modal-cv" id="modalCV3">
+                            <div class="modal-content">
+                                <header class="modal"><i id="CloseBtn3" class="fa fa-close" aria-hidden="true"></i></header>
+                                <h3 style="text-align: center;">Sorry, you can't send this message</h3>
+                                <p>Please check again later, because this website will always be updated.</p>
+                                <footer>created By Ahmad Sabili | C 2021 All right reserved</footer>
+                            </div>
                         </div>
                     </div>
-                </div>
             </section>
             <!-- footer-profile -->
-            <div class="footer">
-                <div class="container-footer-profile">
-                    <footer>
-                        <span>created By Ahmad Sabili | C 2021 All right reserved</span>
-                    </footer>
-                </div>
-            </div>
+                <section class="footer">
+                    <div class="container-footer-profile">
+                        <footer>
+                            <span>created By Ahmad Sabili | C 2021 All right reserved</span>
+                        </footer>
+                    </div>
+                </section>
         </div>
           <script src="js/aos.js"></script>
           <script src="typed.js-master/lib/typed.js"></script>
           <script>
               var typed = new Typed('.type', {
-                strings: ['Ahmad Sabili Alghifar...'],
+                strings: ['Ahmad Sabili Alghifari...'],
                typeSpeed:100,
                backSpeed:80,
                loop:true

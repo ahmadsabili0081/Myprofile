@@ -1,6 +1,9 @@
 window.addEventListener('scroll',function(){
     const header = document.querySelector('header');
+    const hamburger = document.querySelector('.hamburger')
     header.classList.toggle('sticky',window.scrollY > 0);
+    hamburger.classList.toggle('color',window.scrollY > 50);
+
 });
 
 window.addEventListener('scroll',function(){

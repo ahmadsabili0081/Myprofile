@@ -9,7 +9,288 @@
   --primary-bg: hsl(250,69%,61%);
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 1024px) {
+  .container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .container header {
+    width: 100%;
+  }
+  .container .banner-profile {
+    width: 100%;
+  }
+  .container .banner-profile .container-banner-profile {
+    width: 100%;
+  }
+  .container section.about-profile {
+    padding: 50px 10px;
+  }
+  .container section.about-profile .container-about-profile {
+    width: 100%;
+  }
+  .container section.skills-profile {
+    padding: 50px 10px;
+  }
+  .container section.skills-profile .container-skills-profile {
+    width: 100%;
+  }
+  .container section.experience-profile {
+    padding: 50px 10px;
+  }
+  .container section.experience-profile .container-experience-profile {
+    width: 100%;
+  }
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .box-experience-1::after {
+    left: 48.7%;
+  }
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .box-experience-2::before {
+    right: 47.6%;
+  }
+  .container section.gallery-profile {
+    padding: 50px 10px;
+  }
+  .container section.gallery-profile .container-gallery-profile {
+    width: 100%;
+  }
+  .container section.gallery-profile .container-gallery-profile .row-gallery-profile .box-gallery {
+    width: 300px;
+  }
+  .container section.gallery-profile .container-gallery-profile .modal__gallery {
+    width: 100%;
+  }
+  .container section.gallery-profile .container-gallery-profile .modal__gallery .modal__pict {
+    width: 100%;
+  }
+  .container section.contact-profile {
+    padding: 50px 10px;
+  }
+  .container section.contact-profile .container-contact-profile {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .container header {
+    width: 100%;
+  }
+  .container header .hamburger {
+    width: 35px;
+    height: 25px;
+    position: absolute;
+    top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: unset;
+    right: 25px;
+    cursor: pointer;
+    z-index: 300;
+  }
+  .container header .hamburger span.bar {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    border-radius: 10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .container header nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: block;
+    left: 0;
+    bottom: 100%;
+    right: 0;
+    height: 0;
+    overflow-y: hidden;
+    background-color: var(--primary-bg);
+    z-index: 200;
+    -webkit-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+  }
+  .container header nav ul {
+    margin-top: 15%;
+    text-align: center;
+  }
+  .container header nav ul li {
+    margin: 70px 0px;
+    padding: 10px 0px;
+    display: block;
+  }
+  .container header .hamburger.rotate span.bar:first-child {
+    -webkit-transform: rotate(45deg) translate(7px, 7px);
+            transform: rotate(45deg) translate(7px, 7px);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .container header .hamburger.rotate span.bar:nth-child(2) {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+    opacity: 0;
+  }
+  .container header .hamburger.rotate span.bar:last-child {
+    color: #fff;
+    -webkit-transform: rotate(-45deg) translate(9px, -8px);
+            transform: rotate(-45deg) translate(9px, -8px);
+  }
+  .container header .hamburger.color span.bar {
+    background-color: #fff;
+  }
+  .container header nav.show {
+    bottom: 0%;
+    height: 100vh;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .container header.sticky {
+    padding: 3% 0%;
+  }
+  .container header.sticky .hamburger.hamburgerSticky {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container .banner-profile {
+    width: 100%;
+  }
+  .container .banner-profile .container-banner-profile {
+    width: 100%;
+  }
+  .container .banner-profile .container-banner-profile .box-banner-profile {
+    width: 400px;
+  }
+  .container .banner-profile .container-banner-profile .box-banner-profile .text-banner h1 {
+    font-size: 25px;
+  }
+  .container .banner-profile .container-banner-profile .box-banner-profile-img {
+    width: 40%;
+  }
+  .container section.about-profile {
+    padding: 50px 10px;
+  }
+  .container section.about-profile .container-about-profile {
+    width: 100%;
+  }
+  .container section.about-profile .container-about-profile .row-about-profile {
+    margin-top: 10%;
+  }
+  .container section.about-profile .container-about-profile .row-about-profile .box-about-profile-img {
+    width: 340px;
+  }
+  .container section.about-profile .container-about-profile .row-about-profile .box-about-profile {
+    width: 300px;
+  }
+  .container section.skills-profile {
+    padding: 50px 10px;
+  }
+  .container section.skills-profile .container-skills-profile {
+    width: 100%;
+  }
+  .container section.skills-profile .container-skills-profile .row-skills-profile .box-skills-front {
+    width: 400px;
+  }
+  .container section.skills-profile .container-skills-profile .row-skills-profile .box-skills-front .text-front span {
+    margin-right: 50px;
+  }
+  .container section.skills-profile .container-skills-profile .row-skills-profile .box-skill-ms {
+    width: 350px;
+    padding: 0px;
+    margin-top: 12px;
+  }
+  .container section.skills-profile .container-skills-profile .row-skills-profile .box-skill-ms .text-box-skill-ms span {
+    margin-right: 50px;
+  }
+  .container section.experience-profile {
+    padding: 50px 10px;
+  }
+  .container section.experience-profile .container-experience-profile {
+    width: 100%;
+  }
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile {
+    width: 100%;
+  }
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .box-experience-1 .box-experience {
+    width: 45%;
+  }
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .box-experience-1 .box-experience .text-experience {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .box-experience-1 .box-experience .text-experience h3 {
+    font-size: 15px;
+  }
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .box-experience-1 .box-experience .text-experience span {
+    font-size: 10px;
+  }
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .box-experience-1::after {
+    left: 48.4%;
+  }
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .box-experience-2 .box-experience {
+    width: 45%;
+  }
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .box-experience-2 .box-experience .text-experience {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .box-experience-2 .box-experience .text-experience h3 {
+    font-size: 15px;
+  }
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .box-experience-2 .box-experience .text-experience span {
+    font-size: 10px;
+  }
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .box-experience-2::before {
+    right: 47%;
+  }
+  .container section.gallery-profile {
+    padding: 50px 10px;
+  }
+  .container section.gallery-profile .container-gallery-profile {
+    width: 100%;
+  }
+  .container section.gallery-profile .container-gallery-profile .row-gallery-profile .box-gallery {
+    width: 350px;
+  }
+  .container section.contact-profile {
+    padding: 50px 10px;
+  }
+  .container section.contact-profile .container-contact-profile {
+    width: 100%;
+  }
+  .container section.contact-profile .container-contact-profile .row-contact-profile .box-contact {
+    width: 400px;
+  }
+  .container section.contact-profile .container-contact-profile .row-contact-profile .box-input-profile {
+    width: 500px;
+  }
+  .container section.contact-profile .container-contact-profile .row-contact-profile .box-input-profile form .input-group {
+    width: 100%;
+  }
+  .container section.contact-profile .container-contact-profile .row-contact-profile .box-input-profile form .input-group input.subject[type="text"] {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 570px) {
   .loader {
     width: 100%;
   }
@@ -37,11 +318,13 @@
   .container header nav {
     position: fixed;
     bottom: 0;
+    top: 100%;
     width: 100%;
+    display: block;
     left: 0;
     right: 0;
     z-index: 300;
-    height: 0;
+    height: 300px;
     overflow-y: hidden;
     -webkit-transition: 0.5s ease-in;
     transition: 0.5s ease-in;
@@ -50,11 +333,23 @@
   .container header nav ul {
     list-style-type: none;
     text-align: center;
-    margin-top: 35px;
+    margin-top: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .container header nav ul li {
     display: inline-block;
-    width: 100px;
+    width: 120px;
+    margin: 20px 0px;
   }
   .container header nav ul li a {
     font-size: 13px;
@@ -70,14 +365,11 @@
   .container header nav ul li a i {
     font-size: 20px;
   }
-  .container header nav.show {
-    height: 300px;
-  }
   .container header .hamburger {
     width: 30px;
     height: 20px;
     position: fixed;
-    bottom: 50%;
+    top: 40%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -103,6 +395,12 @@
     border-radius: 10px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+  }
+  .container header .hamburger.color span.bar {
+    background-color: var(--primary-bg);
+  }
+  .container header nav.show {
+    top: 50%;
   }
   .container header .hamburger.rotate {
     -webkit-transform: rotate(360deg);
@@ -132,10 +430,10 @@
   .container header.sticky {
     padding: 3% 0%;
   }
-  .container .banner-profile {
+  .container section.banner-profile {
     width: 100%;
   }
-  .container .banner-profile .container-banner-profile {
+  .container section.banner-profile .container-banner-profile {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -144,235 +442,260 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .container .banner-profile .container-banner-profile .box-banner-profile {
+  .container section.banner-profile .container-banner-profile .box-banner-profile {
     width: 90%;
   }
-  .container .banner-profile .container-banner-profile .box-banner-profile .text-banner {
+  .container section.banner-profile .container-banner-profile .box-banner-profile .text-banner {
     margin-top: 40px;
   }
-  .container .banner-profile .container-banner-profile .box-banner-profile .text-banner h1 {
+  .container section.banner-profile .container-banner-profile .box-banner-profile .text-banner h1 {
     font-size: 20px;
   }
-  .container .banner-profile .container-banner-profile .box-banner-profile .text-banner span {
+  .container section.banner-profile .container-banner-profile .box-banner-profile .text-banner span {
     font-size: 14px;
   }
-  .container .banner-profile .container-banner-profile .box-banner-profile-img {
+  .container section.banner-profile .container-banner-profile .box-banner-profile-img {
     width: 80%;
     margin-right: 0%;
     margin-top: 20%;
   }
-  .container .banner-profile .container-banner-profile .modal-cv {
+  .container section.banner-profile .container-banner-profile .modal-cv {
     width: 100%;
   }
-  .container .banner-profile .container-banner-profile .modal-cv .modal-content {
+  .container section.banner-profile .container-banner-profile .modal-cv .modal-content {
     width: 90%;
   }
-  .container .about-profile {
+  .container section.about-profile {
     padding: 100px 20px;
   }
-  .container .about-profile .container-about-profile {
+  .container section.about-profile .container-about-profile {
     width: 100%;
   }
-  .container .about-profile .container-about-profile h1 {
+  .container section.about-profile .container-about-profile h1 {
     text-align: center;
   }
-  .container .about-profile .container-about-profile h1::before {
+  .container section.about-profile .container-about-profile h1::before {
     left: 15%;
   }
-  .container .about-profile .container-about-profile h1::after {
+  .container section.about-profile .container-about-profile h1::after {
     right: 20%;
   }
-  .container .about-profile .container-about-profile .row-about-profile {
+  .container section.about-profile .container-about-profile .row-about-profile {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     margin-top: 20%;
   }
-  .container .about-profile .container-about-profile .row-about-profile .box-about-profile-img {
+  .container section.about-profile .container-about-profile .row-about-profile .box-about-profile-img {
     width: 95%;
     margin-left: 0%;
     margin-top: 7%;
   }
-  .container .about-profile .container-about-profile .row-about-profile .box-about-profile {
+  .container section.about-profile .container-about-profile .row-about-profile .box-about-profile {
+    width: 100%;
+    margin: 0px;
+  }
+  .container section.about-profile .container-about-profile .modal-cv {
     width: 100%;
   }
-  .container .skills-profile {
+  .container section.about-profile .container-about-profile .modal-cv .modal-content {
+    width: 90%;
+    margin: 20% auto;
+  }
+  .container section.skills-profile {
     padding: 100px 10px;
   }
-  .container .skills-profile .container-skills-profile h1::before {
-    left: 23%;
+  .container section.skills-profile .container-skills-profile h1::before {
+    left: 20%;
     width: 100px;
   }
-  .container .skills-profile .container-skills-profile h1::after {
+  .container section.skills-profile .container-skills-profile h1::after {
     width: 100px;
-    right: 23%;
+    right: 20%;
   }
-  .container .skills-profile .container-skills-profile .row-skills-profile {
+  .container section.skills-profile .container-skills-profile .row-skills-profile {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .skills-profile .container-skills-profile .row-skills-profile .box-skills-front {
+  .container section.skills-profile .container-skills-profile .row-skills-profile .box-skills-front {
     width: 100%;
     margin-top: 7%;
     margin-left: 0%;
   }
-  .container .skills-profile .container-skills-profile .row-skills-profile .box-skill-ms {
+  .container section.skills-profile .container-skills-profile .row-skills-profile .box-skills-front .text-front span {
+    margin-right: 0px;
+  }
+  .container section.skills-profile .container-skills-profile .row-skills-profile .box-skill-ms {
     width: 100%;
     padding: 10px;
     margin-top: 5%;
   }
-  .container .skills-profile .container-skills-profile .row-skills-profile .box-skill-ms .box-skills-inside-ms.insideMs.skillActiveMS {
+  .container section.skills-profile .container-skills-profile .row-skills-profile .box-skill-ms .text-box-skill-ms span {
+    margin-right: 0px;
+  }
+  .container section.skills-profile .container-skills-profile .row-skills-profile .box-skill-ms .box-skills-inside-ms.insideMs.skillActiveMS {
     height: 300px;
   }
-  .container .experience-profile {
+  .container section.experience-profile {
     padding: 20px 10px;
   }
-  .container .experience-profile .container-experience-profile {
+  .container section.experience-profile .container-experience-profile {
     width: 100%;
   }
-  .container .experience-profile .container-experience-profile h1::before {
+  .container section.experience-profile .container-experience-profile h1::before {
     left: 15%;
     width: 100px;
   }
-  .container .experience-profile .container-experience-profile h1::after {
+  .container section.experience-profile .container-experience-profile h1::after {
     width: 100px;
     right: 0;
   }
-  .container .experience-profile .container-experience-profile .row-container-experience-profile {
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile {
     width: 100%;
   }
-  .container .experience-profile .container-experience-profile .row-container-experience-profile .line {
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .line {
     left: 0;
     width: 5px;
   }
-  .container .experience-profile .container-experience-profile .row-container-experience-profile .box-experience-1 {
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .box-experience-1 {
     width: 100%;
   }
-  .container .experience-profile .container-experience-profile .row-container-experience-profile .box-experience-1 .box-experience {
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .box-experience-1 .box-experience {
     width: 90%;
     margin-left: 20px;
   }
-  .container .experience-profile .container-experience-profile .row-container-experience-profile .box-experience-1 .box-experience .text-experience h3 {
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .box-experience-1 .box-experience .text-experience h3 {
     font-size: 18px;
   }
-  .container .experience-profile .container-experience-profile .row-container-experience-profile .box-experience-1 .box-experience .text-experience span {
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .box-experience-1 .box-experience .text-experience span {
     font-size: 12px;
   }
-  .container .experience-profile .container-experience-profile .row-container-experience-profile .box-experience-1::after {
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .box-experience-1::after {
     left: -8px;
     width: 20px;
     height: 20px;
   }
-  .container .experience-profile .container-experience-profile .row-container-experience-profile .box-experience-2 {
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .box-experience-2 {
     width: 100%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .container .experience-profile .container-experience-profile .row-container-experience-profile .box-experience-2 .box-experience {
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .box-experience-2 .box-experience {
     width: 90%;
     margin-left: 22px;
   }
-  .container .experience-profile .container-experience-profile .row-container-experience-profile .box-experience-2 .box-experience .text-experience h3 {
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .box-experience-2 .box-experience .text-experience h3 {
     font-size: 18px;
   }
-  .container .experience-profile .container-experience-profile .row-container-experience-profile .box-experience-2 .box-experience .text-experience span {
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .box-experience-2 .box-experience .text-experience span {
     font-size: 12px;
   }
-  .container .experience-profile .container-experience-profile .row-container-experience-profile .box-experience-2 .box-experience p {
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .box-experience-2 .box-experience p {
     text-align: justify;
   }
-  .container .experience-profile .container-experience-profile .row-container-experience-profile .box-experience-2::before {
+  .container section.experience-profile .container-experience-profile .row-container-experience-profile .box-experience-2::before {
     left: -8px;
     width: 20px;
     height: 20px;
   }
-  .container .gallery-profile {
-    padding: 50px 0px;
+  .container section.gallery-profile {
+    padding: 100px 10px;
   }
-  .container .gallery-profile .container-gallery-profile {
-    padding: 10px;
+  .container section.gallery-profile .container-gallery-profile {
+    width: 100%;
   }
-  .container .gallery-profile .container-gallery-profile h1::before {
-    left: 10%;
+  .container section.gallery-profile .container-gallery-profile h1::before {
+    left: 7%;
     width: 100px;
   }
-  .container .gallery-profile .container-gallery-profile h1::after {
+  .container section.gallery-profile .container-gallery-profile h1::after {
     width: 100px;
     left: 65%;
   }
-  .container .gallery-profile .container-gallery-profile .row-gallery-profile .box-gallery {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
+  .container section.gallery-profile .container-gallery-profile .row-gallery-profile .box-gallery {
+    width: 95%;
+    margin: 20px auto;
   }
-  .container .gallery-profile .container-gallery-profile .modal__gallery {
+  .container section.gallery-profile .container-gallery-profile .modal__gallery {
     width: 100%;
   }
-  .container .gallery-profile .container-gallery-profile .modal__gallery .modal__pict {
+  .container section.gallery-profile .container-gallery-profile .modal__gallery .modal__pict {
     width: 100%;
   }
-  .container .contact-profile {
+  .container section.contact-profile {
     padding: 50px 15px;
   }
-  .container .contact-profile .container-contact-profile {
+  .container section.contact-profile .container-contact-profile {
     width: 100%;
     padding: 0px;
   }
-  .container .contact-profile .container-contact-profile h1::before {
+  .container section.contact-profile .container-contact-profile h1::before {
     left: 15%;
     width: 100px;
   }
-  .container .contact-profile .container-contact-profile .row-contact-profile {
+  .container section.contact-profile .container-contact-profile .row-contact-profile {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 20%;
   }
-  .container .contact-profile .container-contact-profile .row-contact-profile .box-contact {
+  .container section.contact-profile .container-contact-profile .row-contact-profile .box-contact {
+    width: 90%;
+  }
+  .container section.contact-profile .container-contact-profile .row-contact-profile .box-input-profile {
     width: 100%;
   }
-  .container .contact-profile .container-contact-profile .row-contact-profile .box-input-profile {
-    width: 100%;
-  }
-  .container .contact-profile .container-contact-profile .row-contact-profile .box-input-profile form {
+  .container section.contact-profile .container-contact-profile .row-contact-profile .box-input-profile form {
     padding: 10px;
   }
-  .container .contact-profile .container-contact-profile .row-contact-profile .box-input-profile form .input-group {
+  .container section.contact-profile .container-contact-profile .row-contact-profile .box-input-profile form .input-group {
     width: 100%;
   }
-  .container .contact-profile .container-contact-profile .row-contact-profile .box-input-profile form .input-group input[type="text"] {
+  .container section.contact-profile .container-contact-profile .row-contact-profile .box-input-profile form .input-group input[type="text"] {
     width: 95%;
     margin: 20px 0px;
   }
-  .container .contact-profile .container-contact-profile .row-contact-profile .box-input-profile form .input-group textarea {
+  .container section.contact-profile .container-contact-profile .row-contact-profile .box-input-profile form .input-group textarea {
     width: 95%;
     margin: 10px 0px;
   }
-  .container .contact-profile .container-contact-profile .row-contact-profile .box-input-profile form .input-group input.subject[type="text"] {
+  .container section.contact-profile .container-contact-profile .row-contact-profile .box-input-profile form .input-group input.subject[type="text"] {
     width: 95%;
   }
-  .container .contact-profile .container-contact-profile .row-contact-profile .box-input-profile form button {
+  .container section.contact-profile .container-contact-profile .row-contact-profile .box-input-profile form button {
     margin: 20px 0px;
   }
-  .container .contact-profile .container-contact-profile .row-contact-profile .box-input-profile form .input-group.text {
+  .container section.contact-profile .container-contact-profile .row-contact-profile .box-input-profile form .input-group.text {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .contact-profile .container-contact-profile .modal {
+  .container section.contact-profile .container-contact-profile .modal {
     width: 100%;
   }
-  .container .contact-profile .container-contact-profile .modal .modal-content-input {
+  .container section.contact-profile .container-contact-profile .modal .modal-content-input {
     width: 90%;
     margin-top: 40%;
+  }
+  .container section.contact-profile .container-contact-profile .modal-cv {
+    width: 100%;
+  }
+  .container section.contact-profile .container-contact-profile .modal-cv .modal-content {
+    width: 90%;
+    margin: 20% auto;
+  }
+  .container section.contact-profile .container-contact-profile .modal-cv .modal-content h3 {
+    font-size: 18px;
+  }
+  .container section.contact-profile .container-contact-profile .modal-cv .modal-content p {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=mobile.css.map */
