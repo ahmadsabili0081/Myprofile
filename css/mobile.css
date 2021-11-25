@@ -318,7 +318,7 @@
   .container header nav {
     position: fixed;
     bottom: 0;
-    top: 100%;
+    top: 120%;
     width: 100%;
     display: block;
     left: 0;
@@ -401,6 +401,7 @@
   }
   .container header nav.show {
     top: 50%;
+    overflow-y: hidden;
   }
   .container header .hamburger.rotate {
     -webkit-transform: rotate(360deg);

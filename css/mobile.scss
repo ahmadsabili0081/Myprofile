@@ -319,7 +319,7 @@ $fontPoppins: 'Poppins', sans-serif;
             nav{
                 position: fixed;
                 bottom: 0;
-                top: 100%;
+                top: 120%;
                 width: 100%;
                 display: block;
                 left: 0;
@@ -381,6 +381,7 @@ $fontPoppins: 'Poppins', sans-serif;
             }
             nav.show{
                 top: 50%;
+                overflow-y: hidden;
             }
             .hamburger.rotate{
                 transform:rotate(360deg);
