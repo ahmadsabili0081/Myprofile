@@ -369,7 +369,7 @@
     width: 30px;
     height: 20px;
     position: fixed;
-    top: 40%;
+    top: 60%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -400,7 +400,7 @@
     background-color: var(--primary-bg);
   }
   .container header nav.show {
-    top: 50%;
+    top: 70%;
     overflow-y: hidden;
   }
   .container header .hamburger.rotate {
@@ -694,6 +694,33 @@
   }
   .container section.contact-profile .container-contact-profile .modal-cv .modal-content p {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .container header {
+    width: 100%;
+  }
+  .container header .hamburger {
+    top: 50%;
+  }
+  .container header nav.show {
+    top: 60%;
+    overflow-y: hidden;
+    z-index: 400;
+    width: 100%;
+  }
+  .container header nav.show ul li {
+    width: 100px;
+  }
+  .container header nav.show ul li a {
+    margin: 5px 0px;
   }
 }
 /*# sourceMappingURL=mobile.css.map */

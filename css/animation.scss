@@ -122,3 +122,16 @@
         transform:translateX(0px);
     }
 }
+.arrows{
+    animation: arrows 1.5s ease-in infinite; 
+    margin-left: 20px;
+}
+
+@keyframes arrows {
+    from{
+        transform: translateX(-10px);
+    }
+    to{
+        transform:translateX(0px);
+    }
+}

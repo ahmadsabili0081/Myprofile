@@ -357,7 +357,7 @@ $fontPoppins: 'Poppins', sans-serif;
                 width: 30px;
                 height: 20px;
                 position: fixed;
-                top: 40%;
+                top: 60%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -380,7 +380,7 @@ $fontPoppins: 'Poppins', sans-serif;
                 }
             }
             nav.show{
-                top: 50%;
+                top: 70%;
                 overflow-y: hidden;
             }
             .hamburger.rotate{
@@ -660,6 +660,35 @@ $fontPoppins: 'Poppins', sans-serif;
                         }
                         p{
                             font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .container{
+        width: 100%;
+        position: relative;
+        min-height: 100vh;
+        overflow-x: hidden;
+        header{
+            width: 100%;
+            .hamburger{
+                top: 50%;
+            }
+            nav.show{
+                top: 60%;
+                overflow-y: hidden;
+                z-index: 400;
+                width: 100%;
+                ul{
+                    li{
+                        width: 100px;
+                        a{
+                            margin: 5px 0px;
                         }
                     }
                 }

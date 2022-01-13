@@ -718,6 +718,15 @@
   text-align: justify;
   font-size: 15px;
   margin-top: 10px;
+  line-height: 1.5;
+}
+
+.container .experience-profile .container-experience-profile .row-container-experience-profile .box-experience-1 .box-experience a {
+  color: #000;
+}
+
+.container .experience-profile .container-experience-profile .row-container-experience-profile .box-experience-1 .box-experience a i.arrows {
+  display: inline-block;
 }
 
 .container .experience-profile .container-experience-profile .row-container-experience-profile .box-experience-1::after {
@@ -762,6 +771,7 @@
 
 .container .experience-profile .container-experience-profile .row-container-experience-profile .box-experience-2 .box-experience p {
   margin-top: 20px;
+  line-height: 1.5;
 }
 
 .container .experience-profile .container-experience-profile .row-container-experience-profile .box-experience-2 .box-experience a {

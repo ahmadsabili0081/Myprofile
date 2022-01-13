@@ -544,6 +544,17 @@ $fontPoppins: 'Poppins', sans-serif;
                             text-align: justify;
                             font-size: 15px;
                             margin-top: 10px;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+                .box-experience-1{
+                    .box-experience{
+                        a{
+                            color: #000;
+                            i.arrows{
+                                display: inline-block;
+                            }
                         }
                     }
                 }
@@ -573,6 +584,7 @@ $fontPoppins: 'Poppins', sans-serif;
                         }
                         p{
                             margin-top: 20px;
+                            line-height: 1.5;
                         }
                         a{
                             display: block;
