@@ -53,3 +53,16 @@ function listenerLaunch(){
         }
     });
 }
+// load more
+let btnGalleryMore = document.querySelector('.seeMore');
+let current  = 3;
+btnGalleryMore.addEventListener('click', () => {
+    let boxes = document.querySelectorAll('.box-gallery');
+    for(let i = current; i < current + 3; i++){
+        boxes[i].style.display = "inline-block";
+    }
+    current += 3;
+    if(current > boxes.length){
+        btnGalleryMore.style.display = "none";
+    }
+});

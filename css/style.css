@@ -11,7 +11,7 @@
 :root {
   --primary-bg: hsl(250,69%,61%);
   --skill-bg: hsl(249.7, 89.5%, 85.1%);
-  --bg-color:#FAFAFA;
+  --bg-color:#F4ECFE;
 }
 
 .loader {
@@ -50,16 +50,14 @@
   min-height: 100vh;
   overflow-x: hidden;
   visibility: hidden;
-  background-color: var(--bg-color);
 }
 
 .container .btnScroll {
   position: fixed;
-  right: 20px;
+  right: -50px;
   width: auto;
   height: auto;
-  display: none;
-  padding: 10px 5px;
+  padding: 7px;
   bottom: 30px;
   border-radius: 5px;
   background-color: var(--primary-bg);
@@ -67,6 +65,8 @@
   -webkit-box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.486);
           box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.486);
   z-index: 500;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .container .btnScroll i {
@@ -75,13 +75,9 @@
 }
 
 .container .btnScroll.hide {
-  -webkit-animation-name: btn;
-          animation-name: btn;
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-  display: block;
+  right: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .container header {
@@ -167,6 +163,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
+  background-color: var(--bg-color);
 }
 
 .container .banner-profile .container-banner-profile {
@@ -402,7 +399,6 @@
 }
 
 .container .skills-profile .container-skills-profile .row-skills-profile .box-skills-front {
-  background-color: #fafafa;
   width: 500px;
   margin-left: 3%;
   padding: 10px;
@@ -478,31 +474,9 @@
   font-family: "Poppins", sans-serif;
 }
 
-.container .skills-profile .container-skills-profile .row-skills-profile .box-skills-front .container-bar .bar.animation {
-  -webkit-animation-name: lebar;
-          animation-name: lebar;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-}
-
-.container .skills-profile .container-skills-profile .row-skills-profile .box-skills-front .container-bar .bar.animation2 {
-  -webkit-animation-name: lebar2;
-          animation-name: lebar2;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
-}
-
-.container .skills-profile .container-skills-profile .row-skills-profile .box-skills-front .container-bar .bar.animation3 {
-  -webkit-animation-name: lebar3;
-          animation-name: lebar3;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 3.5s;
-          animation-duration: 3.5s;
+.container .skills-profile .container-skills-profile .row-skills-profile .box-skills-front .container-bar .bar span::after {
+  content: '%';
+  display: inline-block;
 }
 
 .container .skills-profile .container-skills-profile .row-skills-profile .box-skills-front .container-bar .bar.html {
@@ -590,31 +564,9 @@
   border-radius: 5px;
 }
 
-.container .skills-profile .container-skills-profile .row-skills-profile .box-skill-ms .box-skills-inside-ms .container-bar-ms .bar.animationMS {
-  -webkit-animation-name: animatiMS;
-          animation-name: animatiMS;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-}
-
-.container .skills-profile .container-skills-profile .row-skills-profile .box-skill-ms .box-skills-inside-ms .container-bar-ms .bar.animationM2 {
-  -webkit-animation-name: animatiMS2;
-          animation-name: animatiMS2;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-}
-
-.container .skills-profile .container-skills-profile .row-skills-profile .box-skill-ms .box-skills-inside-ms .container-bar-ms .bar.animationMS3 {
-  -webkit-animation-name: animatiMS3;
-          animation-name: animatiMS3;
-  -webkit-animation-duration: 3.5s;
-          animation-duration: 3.5s;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+.container .skills-profile .container-skills-profile .row-skills-profile .box-skill-ms .box-skills-inside-ms .container-bar-ms .bar span::after {
+  content: '%';
+  display: inline-block;
 }
 
 .container .skills-profile .container-skills-profile .row-skills-profile .box-skill-ms .box-skills-inside-ms .container-bar-ms .bar.word {
@@ -854,6 +806,7 @@
   height: auto;
   margin-top: 5%;
   padding: 10px;
+  display: none;
   border-radius: 10px;
 }
 
@@ -890,6 +843,12 @@
   color: var(--bg-color);
 }
 
+.container .gallery-profile .container-gallery-profile .row-gallery-profile .box-gallery:nth-child(1),
+.container .gallery-profile .container-gallery-profile .row-gallery-profile .box-gallery:nth-child(2),
+.container .gallery-profile .container-gallery-profile .row-gallery-profile .box-gallery:nth-child(3) {
+  display: inline-block;
+}
+
 .container .gallery-profile .container-gallery-profile .row-gallery-profile .box-gallery:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -897,6 +856,19 @@
   transition: 0.5s ease-in;
   -webkit-box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.486);
           box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.486);
+}
+
+.container .gallery-profile .container-gallery-profile button.btn__gallery__more {
+  display: block;
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  margin: 40px auto;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--primary-bg);
 }
 
 .container .gallery-profile .container-gallery-profile .modal__gallery {
